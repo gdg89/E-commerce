@@ -1,0 +1,615 @@
+html,body{
+	padding: 0;
+	margin:0;
+	font-size:16px;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/** Media Queris
+-----------------*/
+@media(max-width:290px){
+	/* Logo */
+		
+		#button-nav{
+			margin:5px;
+		}
+		.navbar-brand{
+			margin-right:0px;
+		}
+		.navbar-toggler{
+			padding:0;
+
+		}
+}
+
+
+
+/* X-Small devices */
+
+	/* Header
+	------------*/
+		header{
+			
+			height: 70px;
+
+			
+		}
+		
+		/* Logo */
+			#logo{
+				
+				width: 180px;
+				padding:0;
+				
+			}
+			#logo img{
+			width: 180px;
+			margin:0;
+
+			
+			}
+
+         /*** links nav */
+         #nav-site{
+         	padding-top: 15px;
+         	background:rgb(60, 60, 60,0.5);
+         	border-radius:5px;
+         	z-index:3;
+
+         }
+          
+         #nav-site ul li a{
+				
+					color:white;
+				    font-weight: 500;
+				   
+
+
+			}
+			#nav-site ul li a:hover{
+				
+				color:hsl(219, 9%, 45%);
+			}
+
+         /*** Cart and User ***/
+        	#cart{
+			border:none;
+			background:none;
+            }
+            	#li-1 h1{
+			font-size:1em;
+			padding-left:5px;
+		    }
+		    #li-2 p{
+		    	margin-top:15px;
+		    }
+		    .dropdown-item:hover{
+			background:none;
+   			}
+   			
+	
+			#cart img{
+			width:25px;
+		  	}
+			#user{
+				border:none;
+				background:none;
+				
+				
+			}
+			#user img{
+				width:60px;
+				
+
+			}
+				#user img:hover{
+					border-radius: 30px;
+				    border:3px solid hsl(26, 100%, 55%);
+			}
+
+            /* button Nav*/
+
+           .navbar-toggler{
+           	border:none;
+           }
+           .navbar-toggler:focus{
+           	box-shadow: none;
+           }
+
+
+
+	/* Conteudo
+	*********************/
+
+	/*Galeria
+	***************/
+  	 #carousel{
+  	 	z-index:2;
+
+  	 	
+
+  	 }
+
+
+  	 
+  	.carousel-control-next, .carousel-control-prev{
+  	 	background:white;
+  	 	height:40px;
+  	 	width:40px;
+  	 	opacity:6;
+  	 	border-radius:20px;
+  	 	margin-top: 220px;
+  	 	
+  	 }
+  	 
+
+  	 
+  	
+
+
+	/*Comerce
+ 	 ***************/
+     #comerce h1{
+		font-size:0.9em;
+		font-weight: 600;
+		color:hsl(26, 100%, 55%);
+		margin-top: 15px;
+		font-family: 'Spartan', sans-serif;
+		}
+		#comerce h2{
+		font-size:2.5em;
+		font-weight:700;
+		}
+		#txt{
+		color:hsl(220, 14%, 75%);
+
+		font-weight:500; 
+		font-size: 1.2em;
+		padding-bottom:15px;
+		}
+		#ofert{
+		
+		color:black;
+		font-weight: 600;
+		font-size: 2em;
+
+
+		}
+
+		#boton{
+
+		width: 50px;
+		height: 30px;
+		margin-left: 8px;
+		border:none;
+		border-radius: 5px;
+		font-size: 18px;
+		padding: 3px;
+		line-height: 1px;
+		background:hsl(25, 100%, 94%);
+		color:hsl(26, 100%, 55%);
+		font-weight: 700;
+		}
+
+		#price {
+		
+		text-align: right;
+		color:hsl(220, 14%, 75%);
+		font-weight:600;
+		font-size: 1.2em; 
+		}
+
+
+     	#selector{
+     	width:98%;
+     	font-size:1.2em;
+     	font-weight:600;
+     	background:hsl(223, 64%, 98%);
+     	border-radius:10px;
+     	}
+     	#selector button{
+     	border:none;
+     	background:none;
+    	 }
+
+      	#btn-add{
+     	background-color: hsl(26, 100%, 55%);
+     	color:white;
+     	font-weight: 500;
+     	border:none;
+     	height: 40px;
+     	width:98%;
+     	border-radius: 10px;
+     	box-shadow: 2px 12px 12px 4px hsl(25, 100%, 94%);
+     	}
+     	 
+      	
+
+ }
+
+        
+
+
+/*Small devices (landscape phones)*/
+        @media (min-width: 576px) {
+
+/* Header
+ ------------*/
+			header{
+				
+				height: 80px;
+			}
+			
+/* Logo */
+
+			#logo img{
+			width: 200px;
+			}
+
+	         /*** links nav */
+	         	 
+	        	 #nav-site ul li a{
+					
+					color:white;
+				    font-weight: 500;
+				    
+
+				}
+				#nav-site ul li a:hover{
+					
+					color:hsl(219, 9%, 45%);
+				}
+
+  /*** Cart and User ***/
+
+        	#cart{
+			border:none;
+			background:none;
+			}
+			#cart img{
+			width:25px;
+		  	}
+		  
+			#user{
+				border:none;
+				background:none;
+				
+				
+			}
+			#user img{
+				width:60px;
+
+			}
+				#user img:hover{
+					border-radius: 30px;
+				    border:3px solid hsl(26, 100%, 55%);
+			}
+           
+           /* button Nav*/
+
+           .navbar-toggler{
+           	border:none;
+           }
+           .navbar-toggler:focus{
+           	box-shadow: none;
+           }
+
+        }
+ /* Conteudo
+  *************/
+  /* Galeria
+   ************/
+   .carousel-control-next, .carousel-control-prev{
+  	 	background:white;
+  	 	height:40px;
+  	 	width:40px;
+  	 	opacity:10;
+  	 	border-radius:20px;
+  	 	}
+  	 #cont-img{
+  	 	border-radius: 20px;
+  	 }
+  	 #indicators{
+  	 	display:none;
+  	 }
+   
+
+/*Medium devices (tablets, 768px e superior)*/
+    @media (min-width: 768px) {
+
+        /* Header
+		------------*/
+        	header{
+		border-bottom:1px solid hsl(219, 9%, 45%);
+		height: 110px;
+
+		} 
+		
+		nav{
+			
+			height: 100px;
+			margin-top: 30px;
+			padding-bottom: 0;
+		}
+
+
+		/** Logo ***/
+		#logo{
+			width: 230px;
+
+		}
+		#logo a img{
+			width: 230px;
+			
+		}
+			#cont-nav{
+				
+				height: 100px;
+				padding-bottom:0;
+				margin-bottom:0;
+			}
+
+			/*** Links Nav ***/
+			#nav-site{
+         	padding-top: 0px;
+         	background:rgba(255, 99, 71, 0);
+
+
+         }
+			#nav-site ul li{
+				
+				padding-top: 40px;
+				margin-bottom:0;
+				height: 102px;
+			}
+			#nav-site ul li a{
+				font-size:1em;
+				color:hsl(220, 14%, 75%);
+			    font-weight: 600;
+				height: 71px;
+			}
+			#nav-site ul li a:hover{
+				border-bottom:5px solid hsl(26, 100%, 55%);
+				color:hsl(219, 9%, 45%);
+			}
+			/* Cart and User*/
+			#drop-menu{
+			margin-top: 20px;
+			margin-left: -200px;
+			width:250px;
+			padding:0;
+			}
+			#user img{
+				width:50px;
+			}
+
+		
+
+/* Conteudo
+****************/
+ /* Carousel 
+ *************/
+ #cont-img{
+  	 	border-radius: 15px;
+
+  	 }
+   .carousel-inner{
+  	width:80%;
+  	margin:auto;
+
+  }
+
+  #indicators{
+  	
+  	width:80%;
+  	margin:auto;
+  	margin-top: 10px;
+	display:flex;
+	justify-content:space-between;
+
+	
+		}
+	#indicators button{
+		width:20%;
+		border-radius:10px;
+		padding:0;
+		border:none; 
+	}
+
+	
+	#indicators img{
+		
+		width: 100%;
+		border-radius:10px;
+	}
+	
+	#indicators img:hover{
+		border:3px solid hsl(26, 100%, 55%);
+		border-radius: 12px;
+	}
+	
+
+ /*Comerce
+     ***************/
+     #comerce h1{
+		font-size:1.5em;
+		color:hsl(26, 100%, 55%);
+	}
+	#comerce h2{
+		font-size:2em;
+		
+	}
+	#txt{
+		color:hsl(220, 14%, 75%);
+		font-weight:600; 
+		font-size: 1em;
+		padding-bottom:5px;
+		margin-bottom: 0;
+	}
+	#ofert{
+		color:black;
+		font-weight: 600;
+		font-size: 1.3em;
+		margin-bottom: 0;
+		height: 35px;
+	}
+	#boton{
+
+		width: 40px;
+		height: 20px;
+		border:none;
+		border-radius: 5px;
+		font-size: 15px;
+		padding: 3px;
+		background:hsl(25, 100%, 94%);
+		color:hsl(26, 100%, 55%);
+		font-weight: 600;
+	}
+	#price{
+		
+		text-align: left;
+		height: 20px;
+		margin-top: 0;
+		color:hsl(220, 14%, 75%);
+		font-weight:600;
+		font-size: 0.8em;
+
+	}
+	
+
+}
+
+
+
+
+/*Large devices (desktops, 992px e superior)*/
+    @media (min-width:992px) {
+    	body{
+    		
+    	}
+        #container{
+        	margin:auto;
+        	max-width:1463px;
+        }
+        /* Header
+		------------*/
+        	header{
+			border-bottom:1px solid hsl(219, 9%, 45%);
+			height: 115px;
+			}
+
+
+		nav{
+			
+			height: 100px;
+			margin-top: 30px;
+			padding-bottom: 0;
+		}
+
+		/** Logo ***/
+		#logo a img{
+			width: 230px;
+			
+		}
+			#cont-nav{
+				
+				height: 100px;
+				padding-bottom:0;
+				margin-bottom:0;
+			}
+
+			/*** Links Nav ***/
+			#nav-site ul li{
+				
+				padding-top: 35px;
+				margin-bottom:0;
+				height: 102px;
+			}
+			#nav-site ul li a{
+				font-size:1.3em;
+				color:hsl(220, 14%, 75%);
+			    font-weight: 600;
+				height: 80px;
+			}
+			#nav-site ul li a:hover{
+				border-bottom:5px solid hsl(26, 100%, 55%);
+				color:hsl(219, 9%, 45%);
+			}
+
+		/*** Cart and User**/
+
+		
+		#cart img{
+			width:25px;
+		}
+		#drop-menu{
+			margin-top: 20px;
+			width:250px;
+			padding:0;
+
+		}
+		#drop-menu li{
+			margin:0;
+			padding:0;
+			
+		}
+		.dropdown-item:hover{
+			background:none;
+
+		}
+		#li-1 h1{
+			font-size:1em;
+			padding-left:5px;
+
+		}
+		#user{
+			border:none;
+			background:none;
+			
+		}
+		#user img{
+			width:70px;
+
+		}
+			#user img:hover{
+				border-radius: 35px;
+			    border:3px solid hsl(26, 100%, 55%);
+		}
+/* Conteudo
+****************/
+
+
+
+
+/*Extra large devices (large desktops, 1200px e superior)*/
+     @media (min-width: 1200px) {
+     	/*Comerce*/
+	#comerce h1{
+		font-size: 2.2em;
+
+	}
+	#comerce h2{
+		font-size: 3em;
+	}
+	#txt{
+		font-size: 1.5em;
+	}
+	#ofert{
+		font-size: 2em;
+	}
+	#boton{
+
+		width: 50px;
+		height: 30px;
+		font-size:0.5em;
+	}
+	#price{
+		margin-top:10px;
+		font-size: 1em;
+	}
+		             
+	
+            
+        }
+
