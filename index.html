@@ -31,139 +31,146 @@
   </style>
 </head>
 <body>
- <div class="px-lg-5 mx-md-4 mx-sm-4 mx-0" id="container"><!-- Container geral -->
-
-    <header > <!-- Header-->
-      <nav class="navbar  mx-lg-3 mx-md-3 navbar-expand-md navbar-light bg-md-white" >
-
-        <div id="cont-nav" class="container-fluid"><!-- container navegacion -->
-
-         <div  id="logo"> <!-- Logo-->
-            <a class="navbar-brand" href="">
+ <div class="cont_gral" id="container" ><!-- Container geral -->
+  <header class="header"> <!-- Header-->
+      <nav>
+          <figure class="logo"> <!-- Logo-->
+            <a href="#">
               <img src="images/logo.svg"  alt="sneakers logo" >
             </a> 
-          </div> <!-- /Logo-->
-           
-         
-              <button id="button-nav" class="navbar-toggler  mt-sm-3" data-bs-toggle="collapse" data-bs-target=#nav-site><!-- Button Nav-->
-                <span class="navbar-toggler-icon"></span>
-              </button><!-- /Button Nav-->
+          </figure> <!-- /Logo-->
+          <div class="wrpper_barnav"><!-- Cont Drop Nav-->
+            <button id="burguer_btn" class="burguer_button" onclick="bgButton()"><!-- Button Nav-->
+                <span id="bar1" class="bar_btn "></span>
+                <span id="bar2" class="bar_btn "></span>
+                <span id="bar3" class="bar_btn "></span>
+            </button><!-- /Button Nav-->
+            <div id="barNav" class="bar_nav"><!-- Cont List Nav -->
+              <ul ><!-- list nav -->
+                  <li><a href="">Collections</a></li>
+                  <li><a href=""> Men</a></li>
+                  <li><a href=""> Women</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul><!-- /list nav -->
+            </div><!-- /Cont List Nav -->
+          </div><!-- /Cont Drop Nav-->
 
-            <div class="collapse navbar-collapse dp-flex flex-row-reverse" id="nav-site"> <!-- Barra Nav -->
-
-              <button id="user" class=""><!-- User -->
-                <img src="images/image-avatar.png" alt="foto usuario" title="Sua conta">
-              </button><!-- /User -->
-
-               <div class=" nav-bar  pt-3 dropdown" ><!-- Cart -->
-
-                <a class=" nav-link nav nav-item" href="#" id="dropcart" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="images/icon-cart.svg" alt="cart" title="carrito de compras">
-                </a>
-                  <ul id="drop-menu" class="dropdown-menu " aria-labelledby="dropcart"><!-- Menu dropdown-->
-                    <li id=li-1 class="dropdown-item h-25 border-bottom border-dark pt-1 ">
-                     <h1>Cart</h1>
-                   </li>
-                  
-                    <li id=li-2 class="dropdown-item text-center ">
-                      <p >Your cart is empty</p>
-                    </li>
-                  </ul><!-- /Menu dropdown-->
-             </div><!-- /Cart -->
-
-              
-              <ul class="navbar-nav me-auto mb-0 ps-sm-3 ps-3 py-sm-3 py-3 item" ><!-- list nav -->
-                <li class="nav-item"><a class="nav-link" href="">Collections</a></li>
-                <li class="nav-item"><a class="nav-link" href=""> Men</a></li>
-                <li class="nav-item"><a class="nav-link" href=""> Women</a></li>
-                <li class="nav-item"><a class="nav-link" href="">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
-              </ul><!-- /list nav -->
-
-           </div><!-- /Barra Nav -->
-        </div><!-- /container navegacion --> 
+            <button class="user_login"><!-- User -->
+              <img src="images/image-avatar.png" alt="foto usuario" title="Sua conta">
+            </button><!-- /User -->
+            <div class="cart_icon" ><!-- Cart -->
+              <a href="#" id="dropcart" role="button" onclick="cartMenu()" >
+                <img src="images/icon-cart.svg" alt="cart" title="carrito de compras">
+                <span class="items_number">5</span>
+              </a>
+          </div><!-- /Cart -->
+          <div id="down_cartmenu" class="wppr_cartmenu">
+                <ul class="drop_cart_menu"><!-- Cart Menu dropdown-->
+                  <li class=li-1>
+                    <p>Cart</p>
+                  </li>
+                  <li class="li-2">
+                    <p class="empty_cart">Your cart is empty</p><!--messagem Carrinho vacio -->
+                    <div class="basket_filled">
+                      <div class="cont_msg">
+                        <img class="item-cart" alt="product" src="images/image-product-1-thumbnail.jpg">
+                        <div class="msg345">
+                          <p>autum limited edition...</p>
+                          <span>percio y cantidad js</span>
+                        </div>
+                        <button type="button" class="btn_excluir">
+                          <i><img src="images/icon-delete.svg"></i>
+                        </button>
+                      </div>
+                      <button class="btn_chekout" type="submit">
+                          Checkout
+                      </button>
+                    </div>
+                  </li>
+                </ul><!-- /Cart Menu dropdown-->
+          </div>
       </nav> 
-    </header><!-- /Header-->
+  </header><!-- /Header-->
 
-    <main class="container pt-3 mb-5" ><!-- Conteudo -->
+    <main class="main" onclick="clickOff()"><!-- Conteudo -->
 
-      <section id="section" class="row">
-        <div class="col-12 p-0 col-md-6"> <!-- Galeria -->
-          <div id="carousel" class="carousel slide " data-bs-ride="carousel"><!-- Carousel -->
-            <div id="cont-img" class="carousel-inner">
-              <div class="carousel-item active">
+      <section id="section">
+        <div > <!-- Galeria -->
+          <div id="carousel" class="carousel_cont"> <!-- Carousel --> 
+            <div id="cont-img" class="img_galleryCont" ><!-- Gallery Cont -->
+              <div  class="shoes_img ">
                 <img src="images/image-product-1.jpg" alt="shoes image" class="d-block w-100 ">
               </div>
-              <div class="carousel-item">
+              <div class="shoes_img ">
                 <img src="images/image-product-2.jpg" alt="shoes image" class="d-block w-100">
               </div>
-              <div class="carousel-item">
+              <div class="shoes_img">
                 <img src="images/image-product-3.jpg" alt="shoes image" class="d-block w-100">
               </div>
-              <div class="carousel-item">
+              <div class="shoes_img ">
                 <img src="images/image-product-4.jpg" alt="shoes image" class="d-block w-100">
               </div>
-            </div>
+              <!-- Controles -->
+                <button class="control_prev" type="button" onclick="plusSlides(-1)"><!--boton prev-->
+                  <span>
+                    <img alt="#" src="images/icon-previous.svg">
+                  </span>
+                  <span class="control_txt">Previous</span>
+                </button><!--/boton prev-->
 
-            <!-- Controles -->
-            <button class="carousel-control-prev control mx-2 d-md-none " type="button" data-bs-target="#carousel" data-bs-slide="prev"><!--boton prev-->
-              <span>
-                <img alt="#" src="images/icon-previous.svg">
-              </span>
-              <span class="visually-hidden">Previous</span>
-            </button><!--/boton prev-->
+                <button class="control_next" type="button" onclick="plusSlides(1)"><!--boton next-->
+                  <span>
+                    <img alt="#" src="images/icon-next.svg">
+                  </span>
+                  <span class="control_txt">Next</span>
+               </button><!--/boton next-->
+            </div><!-- /Gallery Cont -->
 
-            <button class="carousel-control-next control mx-2 d-md-none" type="button" data-bs-target="#carousel" data-bs-slide="next"><!--boton next-->
-              <span class="">
-                <img alt="#" src="images/icon-next.svg">
-              </span>
-              <span class="visually-hidden">Next</span>
-           </button><!--/boton next-->
-         </div><!--/ Carousel -->
-         <div id="indicators" class="mt-md-4" ><!-- Indicadores -->
-              <button  data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-               <img src="images/image-product-1-thumbnail.jpg">
+            
+          </div> <!-- Carousel  -->
+         <div class="thumbnails_cont"><!-- Indicadores -->
+              <button >
+               <img alt="shoes thumbnail" src="images/image-product-1-thumbnail.jpg">
               </button>
-              <button data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                <img src="images/image-product-2-thumbnail.jpg">
+              <button>
+                <img alt="shoes thumbnail" src="images/image-product-2-thumbnail.jpg">
               </button>
-              <button data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3">
-                <img src="images/image-product-3-thumbnail.jpg">
+              <button >
+                <img alt="shoes thumbnail" src="images/image-product-3-thumbnail.jpg">
               </button>
-              <button data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4">
-                <img src="images/image-product-4-thumbnail.jpg">
+              <button >
+                <img alt="shoes thumbnail" src="images/image-product-4-thumbnail.jpg">
               </button>
           </div><!-- /Indicadores -->
         </div> <!--/ Galeria -->
 
-        <div id="comerce" class="col-12 px-4  col-md-6 " ><!-- Comerce-->
-          <h1 class="text-uppercase">Sneaker Company</h1> 
+        <div id="comerce"><!-- Comerce-->
+          <h1>Sneaker Company</h1> 
 
           <h2>Fall Limited Edition Sneakers</h2> 
-
             <p id="txt">These low-profile sneakers are your perfect casual wear   companion. Featuring a 
             durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
 
-          <div class="row">
-            <p id="ofert" class="col-8 col-md-12">$125.00 <input value="50%" id="boton" disabled></p>
+          <div>
+            <p id="ofert">$125.00 <input value="50%" id="boton" disabled></p>
+            <p id="price"><span><del>$250.00</del></span></p>
 
-            <p id="price" class="col-4 pt-2 pt-md-0 "><span><del>$250.00</del></span></p>
-
-            <div id="selector" class="row pt-2 m-auto mb-3"><!-- Selector de Productos -->
-              <button class="col-2 align-self-start"><img alt="#" src="images/icon-minus.svg"></button>
-              <div class="col-8 aling-self-center text-center"><p>0</p></div>
-              <button class="col-2 align-self-start"><img alt="#" src="images/icon-plus.svg"></button>
+            <div id="selector"><!-- Selector de Productos -->
+              <button><img alt="#" src="images/icon-minus.svg"></button>
+              <div><p>0</p></div>
+              <button><img alt="#" src="images/icon-plus.svg"></button>
             </div><!--/ Selector de Productos -->
           
             <button id="btn-add" type="submit">
-              <i class="fas fa-cart-arrow-down"></i><span class="px-3">Add to cart</span>
+              <i class="fas fa-cart-arrow-down"></i><span>Add to cart</span>
             </button>
           </div> 
-        </div><!-- /Comerce--->
+        </div><!-- /Comerce -->
        
       </section>
     </main>
-    <footer class="pb-5" > <!-- Rodapé -->
+    <footer class="rodape"> <!-- Rodapé -->
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Giuiliano Garcia</a>.
@@ -172,7 +179,6 @@
  </div> <!-- Fim Container Geral -->
 
  <!-- Componente JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ <script src="js.js"></script>
 </body>
 </html>
